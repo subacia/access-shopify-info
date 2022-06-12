@@ -24,12 +24,6 @@ exports.getProducts = (req,res) =>{
     .then(function (response) {
         
         var products = response.products;
-        // var limit = 10;
-        // var startIndex = (page-1)*limit;
-        // var endIndex   =  page*limit;
-        
-        // var responseData = products.slice(startIndex, endIndex);
-
         res.status(200).json({
             products : products
         });

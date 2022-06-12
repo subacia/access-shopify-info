@@ -1,70 +1,68 @@
 module.exports = {
-	message : "testCase : it should sucessfully fetch shop info",
+	message : "testCase : it should fetch product info successfully ",
 
-	input : "",
+	input : {
+        "page_info" : "eyJsYXN0X2lkIjo2OTg5NTE3NjUyMTc0LCJsYXN0X3ZhbHVlIjoiQWJpZ2FpbCBLYW5DYW4gSmVhbnMiLCJkaXJlY3Rpb24iOiJuZXh0In0",
+        "limit" : 1,
+        "rel" : "next"
+    },
 
 	output : 
 	{
-        "data": {
-            "shop": {
-                "id": 61584474318,
+        "productListing": {
+            "shop_info": {
                 "name": "vajro-interview",
-                "email": "vajro.interview@gmail.com",
-                "domain": "vajro-interview.myshopify.com",
-                "province": "Tamil Nadu",
-                "country": "IN",
-                "address1": "India",
-                "zip": "600001",
-                "city": "Chennai",
-                "source": null,
-                "phone": "",
-                "latitude": 13.0963045,
-                "longitude": 80.2865916,
-                "primary_locale": "en",
-                "address2": null,
-                "created_at": "2022-04-11T18:50:24+05:30",
-                "updated_at": "2022-04-12T10:53:05+05:30",
-                "country_code": "IN",
-                "country_name": "India",
-                "currency": "INR",
-                "customer_email": "vajro.interview@gmail.com",
-                "timezone": "(GMT+05:30) Asia/Calcutta",
-                "iana_timezone": "Asia/Calcutta",
-                "shop_owner": "Vjr Interview",
-                "money_format": "Rs. {{amount}}",
-                "money_with_currency_format": "Rs. {{amount}}",
-                "weight_unit": "kg",
-                "province_code": "TN",
-                "taxes_included": false,
-                "auto_configure_tax_inclusivity": null,
-                "tax_shipping": null,
-                "county_taxes": true,
-                "plan_display_name": "Developer Preview",
-                "plan_name": "partner_test",
-                "has_discounts": false,
-                "has_gift_cards": false,
-                "myshopify_domain": "vajro-interview.myshopify.com",
-                "google_apps_domain": null,
-                "google_apps_login_enabled": null,
-                "money_in_emails_format": "Rs. {{amount}}",
-                "money_with_currency_in_emails_format": "Rs. {{amount}}",
-                "eligible_for_payments": false,
-                "requires_extra_payments_agreement": false,
-                "password_enabled": true,
-                "has_storefront": true,
-                "eligible_for_card_reader_giveaway": false,
-                "finances": true,
-                "primary_location_id": 66538602702,
-                "cookie_consent_level": "implicit",
-                "visitor_tracking_consent_preference": "allow_all",
-                "checkout_api_supported": false,
-                "multi_location_enabled": true,
-                "setup_required": false,
-                "pre_launch_enabled": false,
-                "enabled_presentment_currencies": [
-                    "INR"
-                ]
-            }
+                "domain": "vajro-interview.myshopify.com"
+            },
+            "product_count": 50,
+            "products": [
+                {
+                    "id": 6989517095118,
+                    "title": "All About the Neutrals Color Block Sweater",
+                    "created_at": "2022-04-12T13:09:25+05:30",
+                    "status": "active",
+                    "variants": [
+                        {
+                            "id": 41111999447246,
+                            "title": "S",
+                            "price": "19.99",
+                            "compare_at_price": "49.95",
+                            "inventory_item_id": 43204326129870,
+                            "inventory_quantity": 1,
+                            "requires_shipping": true
+                        },
+                        {
+                            "id": 41111999480014,
+                            "title": "M",
+                            "price": "19.99",
+                            "compare_at_price": "49.95",
+                            "inventory_item_id": 43204326162638,
+                            "inventory_quantity": 0,
+                            "requires_shipping": true
+                        },
+                        {
+                            "id": 41111999512782,
+                            "title": "L",
+                            "price": "19.99",
+                            "compare_at_price": "49.95",
+                            "inventory_item_id": 43204326195406,
+                            "inventory_quantity": 0,
+                            "requires_shipping": true
+                        }
+                    ],
+                    "images": [
+                        {
+                            "src": "https://cdn.shopify.com/s/files/1/0615/8447/4318/products/image_62c46498-e70e-46c3-89c6-10001f120730.jpg?v=1649749165"
+                        },
+                        {
+                            "src": "https://cdn.shopify.com/s/files/1/0615/8447/4318/products/image_12b5a15c-0f43-4e68-a731-e8eabbdaadca.jpg?v=1649749165"
+                        },
+                        {
+                            "src": "https://cdn.shopify.com/s/files/1/0615/8447/4318/products/image_01822b09-ce1c-43e4-9fdf-ac55ce39f1ee.jpg?v=1649749165"
+                        }
+                    ]
+                }
+            ]
         }
     }
 }
