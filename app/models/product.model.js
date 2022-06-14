@@ -1,9 +1,6 @@
 const sql = require("./db.js");
-// const NodeCache = require("node-cache");
 const cache = require("./cache");
 
-
-// const cache = new NodeCache({ stdTTL: 15 });
 const Product = function(productCountInfo) {
     
     this.product_count = productCountInfo.product_count;
