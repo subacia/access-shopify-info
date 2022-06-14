@@ -9,10 +9,13 @@
   "author": "Fino",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "chai": "^4.3.6",
     "chai-http": "^4.3.0",
     "express": "^4.18.1",
     "mocha": "^10.0.0",
+    "mysql": "^2.18.1",
+    "node-cache": "^5.1.2",
     "request-promise": "^4.2.6"
   }
 }

@@ -7,11 +7,11 @@ exports.getProductListing = (req,res) =>{
     var limit = req.query.limit;
     var rel = req.query.rel;
 
-    var shopInfo = getShopData().then((shopInfoResponse) => {
+    shopInfo = getShopData().then((shopInfoResponse) => {
 
-        var productCount = getProductCountData().then((productCountResponse) => {
+        productCount = getProductCountData().then((productCountResponse) => {
 
-            var productData = getProductData(page_info,limit,rel ).then((productResponse) => {
+            productData = getProductData(page_info,limit,rel ).then((productResponse) => {
 
                 shopInfo =  {
                     name : shopInfoResponse.shop.name,
