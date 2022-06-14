@@ -12,6 +12,9 @@ app.use('/', routes);
 
 var port = process.env.PORT || 3000;
 
-app.listen(port, () => {            
+server = app.listen(port, () => {            
     console.log(`Now listening on port ${port}`); 
 });
+
+
+module.exports = server
